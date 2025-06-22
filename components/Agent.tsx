@@ -32,6 +32,7 @@ const Agent = ({
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
   const [messages, setMessages] = useState<SavedMessage[]>([]);
+  // const [lastMessage, setLastMessage] = useState<string>("");
 
   useEffect(() => {
     const onCallStart = () => setCallStatus(CallStatus.ACTIVE);
@@ -129,6 +130,7 @@ const Agent = ({
       });
     }
   };
+
   const handleDisconnect = async () => {
     setCallStatus(CallStatus.FINISHED);
 
