@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### `Demo` - https://cinibuzz.netlify.app
+### `Demo` - https://intpreps.vercel.app/sign-in
 
 ## Preview
 ### `Sign up/ sign in page`
