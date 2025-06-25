@@ -78,6 +78,15 @@ export async function setSessionCookie(idToken: string) {
   });
 }
 
+export async function removeSessionCookie() {
+  const cookieStore = await cookies();
+
+  cookieStore.set('session', '', {
+    maxAge: 0,
+    path: '/',
+  });
+}
+
 export async function getCurrentUser(): Promise<User | null> {
   const cookieStore = await cookies();
   const sessionCookie = cookieStore.get('session')?.value;
